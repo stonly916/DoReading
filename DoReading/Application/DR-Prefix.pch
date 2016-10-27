@@ -1,0 +1,44 @@
+//
+//  DR-Prefix.pch
+//  DoReading
+//
+//  Created by Wang Huiguang on 15/10/26.
+//  Copyright © 2015年 ForHappy. All rights reserved.
+//
+
+#ifndef DR_Prefix_pch
+#define DR_Prefix_pch
+
+#ifdef __OBJC__
+
+#import <Foundation/Foundation.h>
+#import <objc/runtime.h>
+#import <libkern/OSAtomic.h>
+
+//通过pods添加的三方库
+#import "Masonry.h"
+#import "AFNetworking.h"
+#import "Mantle.h"
+#import "MTLEXTScope.h"
+#import "EXTKeyPathCoding.h"
+
+//加载开放性库-DRLibrary
+#import <DRLibrary.h>
+//加载基础库
+#import <DRBase.h>
+#import <DRMacros.h>
+//自写公用库
+#import "DownLoadAlertViewController.h"
+#import "BooksManager.h"
+
+#import "DRBookSchemeUrl.h"
+
+#ifndef __OPTIMIZE__
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...) {}
+#endif
+
+#endif
+
+#endif /* DR_Prefix_pch */

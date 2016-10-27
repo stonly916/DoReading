@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		200EA8741CF7065C00097D48 /* NSString+stringSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 200EA8731CF7065C00097D48 /* NSString+stringSize.m */; };
+		201DA8B01C055FCA00453605 /* DRBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DA8AF1C055FCA00453605 /* DRBase.m */; };
+		201DA8C21C05652500453605 /* DRNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DA8BD1C05632B00453605 /* DRNavigationController.m */; };
+		201DA92D1C05BC2400453605 /* NSString+grep.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DA92C1C05BC2400453605 /* NSString+grep.m */; };
+		201DA9301C05BC8A00453605 /* UIView+indicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DA92F1C05BC8A00453605 /* UIView+indicator.m */; };
+		2027624B1C084925004E19CD /* DRBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2027624A1C084925004E19CD /* DRBaseViewController.m */; };
+		202830591CF7DE7800472132 /* NSDictionary+containKeyOrValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 202830581CF7DE7800472132 /* NSDictionary+containKeyOrValue.m */; };
+		2028305F1CF7F0D500472132 /* DRBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2028305E1CF7F0D500472132 /* DRBaseTableViewController.m */; };
+		203D85DC1C1196C700030046 /* UILabel+DRFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 203D85DB1C1196C700030046 /* UILabel+DRFactory.m */; };
+		203D85DF1C11990300030046 /* UITextField+DRFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 203D85DE1C11990300030046 /* UITextField+DRFactory.m */; };
+		2040FF491DC193FE00F5284F /* NSMutableArray+safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 2040FF481DC193FE00F5284F /* NSMutableArray+safe.m */; };
+		2040FF4C1DC1990B00F5284F /* UIColor+colorForCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2040FF4B1DC1990B00F5284F /* UIColor+colorForCode.m */; };
+		2040FF4F1DC1A22900F5284F /* UIButton+factory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2040FF4E1DC1A22900F5284F /* UIButton+factory.m */; };
+		20988FFA1CF81FA600E810B5 /* libDRLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20988FF91CF81FA600E810B5 /* libDRLibrary.a */; };
+		20988FFC1CF81FA900E810B5 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20988FFB1CF81FA900E810B5 /* Pods.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		200EA8721CF7065C00097D48 /* NSString+stringSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+stringSize.h"; sourceTree = "<group>"; };
+		200EA8731CF7065C00097D48 /* NSString+stringSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+stringSize.m"; sourceTree = "<group>"; };
+		201DA8AA1C055FCA00453605 /* libDRBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDRBase.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		201DA8AD1C055FCA00453605 /* DRBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DRBase.h; sourceTree = "<group>"; };
+		201DA8AF1C055FCA00453605 /* DRBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DRBase.m; sourceTree = "<group>"; };
+		201DA8BC1C05632B00453605 /* DRNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DRNavigationController.h; sourceTree = "<group>"; };
+		201DA8BD1C05632B00453605 /* DRNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DRNavigationController.m; sourceTree = "<group>"; };
+		201DA8C11C05646C00453605 /* DRBase-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DRBase-Prefix.pch"; sourceTree = "<group>"; };
+		201DA8C51C056A1A00453605 /* DRMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DRMacros.h; sourceTree = "<group>"; };
+		201DA92B1C05BC2400453605 /* NSString+grep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+grep.h"; sourceTree = "<group>"; };
+		201DA92C1C05BC2400453605 /* NSString+grep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+grep.m"; sourceTree = "<group>"; };
+		201DA92E1C05BC8A00453605 /* UIView+indicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+indicator.h"; sourceTree = "<group>"; };
+		201DA92F1C05BC8A00453605 /* UIView+indicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+indicator.m"; sourceTree = "<group>"; };
+		202762491C084925004E19CD /* DRBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRBaseViewController.h; sourceTree = "<group>"; };
+		2027624A1C084925004E19CD /* DRBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRBaseViewController.m; sourceTree = "<group>"; };
+		202830571CF7DE7800472132 /* NSDictionary+containKeyOrValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+containKeyOrValue.h"; sourceTree = "<group>"; };
+		202830581CF7DE7800472132 /* NSDictionary+containKeyOrValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+containKeyOrValue.m"; sourceTree = "<group>"; };
+		2028305D1CF7F0D500472132 /* DRBaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRBaseTableViewController.h; sourceTree = "<group>"; };
+		2028305E1CF7F0D500472132 /* DRBaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRBaseTableViewController.m; sourceTree = "<group>"; };
+		203D85DA1C1196C700030046 /* UILabel+DRFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+DRFactory.h"; sourceTree = "<group>"; };
+		203D85DB1C1196C700030046 /* UILabel+DRFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+DRFactory.m"; sourceTree = "<group>"; };
+		203D85DD1C11990300030046 /* UITextField+DRFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+DRFactory.h"; sourceTree = "<group>"; };
+		203D85DE1C11990300030046 /* UITextField+DRFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+DRFactory.m"; sourceTree = "<group>"; };
+		2040FF471DC193FE00F5284F /* NSMutableArray+safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+safe.h"; sourceTree = "<group>"; };
+		2040FF481DC193FE00F5284F /* NSMutableArray+safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+safe.m"; sourceTree = "<group>"; };
+		2040FF4A1DC1990B00F5284F /* UIColor+colorForCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+colorForCode.h"; sourceTree = "<group>"; };
+		2040FF4B1DC1990B00F5284F /* UIColor+colorForCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+colorForCode.m"; sourceTree = "<group>"; };
+		2040FF4D1DC1A22900F5284F /* UIButton+factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+factory.h"; sourceTree = "<group>"; };
+		2040FF4E1DC1A22900F5284F /* UIButton+factory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+factory.m"; sourceTree = "<group>"; };
+		20988FF91CF81FA600E810B5 /* libDRLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libDRLibrary.a; path = "../Build/Products/Debug-iphonesimulator/libDRLibrary.a"; sourceTree = "<group>"; };
+		20988FFB1CF81FA900E810B5 /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = "../Build/Products/Debug-iphonesimulator/Pods.framework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		201DA8A71C055FCA00453605 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20988FFC1CF81FA900E810B5 /* Pods.framework in Frameworks */,
+				20988FFA1CF81FA600E810B5 /* libDRLibrary.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		201DA8A11C055FCA00453605 = {
+			isa = PBXGroup;
+			children = (
+				20988FF21CF818F400E810B5 /* Framework */,
+				201DA8AC1C055FCA00453605 /* DRBase */,
+				201DA8AB1C055FCA00453605 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		201DA8AB1C055FCA00453605 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				201DA8AA1C055FCA00453605 /* libDRBase.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		201DA8AC1C055FCA00453605 /* DRBase */ = {
+			isa = PBXGroup;
+			children = (
+				201DA8AD1C055FCA00453605 /* DRBase.h */,
+				201DA8AF1C055FCA00453605 /* DRBase.m */,
+				201DA8C11C05646C00453605 /* DRBase-Prefix.pch */,
+				201DA8C51C056A1A00453605 /* DRMacros.h */,
+				201DA8BB1C05632B00453605 /* Controller */,
+				201DA8C01C05632B00453605 /* View */,
+				201DA8C61C0589ED00453605 /* CommonLibrary */,
+			);
+			path = DRBase;
+			sourceTree = "<group>";
+		};
+		201DA8BB1C05632B00453605 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				201DA8BC1C05632B00453605 /* DRNavigationController.h */,
+				201DA8BD1C05632B00453605 /* DRNavigationController.m */,
+				2028305D1CF7F0D500472132 /* DRBaseTableViewController.h */,
+				2028305E1CF7F0D500472132 /* DRBaseTableViewController.m */,
+				202762491C084925004E19CD /* DRBaseViewController.h */,
+				2027624A1C084925004E19CD /* DRBaseViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		201DA8C01C05632B00453605 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		201DA8C61C0589ED00453605 /* CommonLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				200EA8721CF7065C00097D48 /* NSString+stringSize.h */,
+				200EA8731CF7065C00097D48 /* NSString+stringSize.m */,
+				201DA92B1C05BC2400453605 /* NSString+grep.h */,
+				201DA92C1C05BC2400453605 /* NSString+grep.m */,
+				202830571CF7DE7800472132 /* NSDictionary+containKeyOrValue.h */,
+				202830581CF7DE7800472132 /* NSDictionary+containKeyOrValue.m */,
+				2040FF471DC193FE00F5284F /* NSMutableArray+safe.h */,
+				2040FF481DC193FE00F5284F /* NSMutableArray+safe.m */,
+				201DA92E1C05BC8A00453605 /* UIView+indicator.h */,
+				201DA92F1C05BC8A00453605 /* UIView+indicator.m */,
+				203D85DA1C1196C700030046 /* UILabel+DRFactory.h */,
+				203D85DB1C1196C700030046 /* UILabel+DRFactory.m */,
+				203D85DD1C11990300030046 /* UITextField+DRFactory.h */,
+				203D85DE1C11990300030046 /* UITextField+DRFactory.m */,
+				2040FF4D1DC1A22900F5284F /* UIButton+factory.h */,
+				2040FF4E1DC1A22900F5284F /* UIButton+factory.m */,
+				2040FF4A1DC1990B00F5284F /* UIColor+colorForCode.h */,
+				2040FF4B1DC1990B00F5284F /* UIColor+colorForCode.m */,
+			);
+			path = CommonLibrary;
+			sourceTree = "<group>";
+		};
+		20988FF21CF818F400E810B5 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				20988FFB1CF81FA900E810B5 /* Pods.framework */,
+				20988FF91CF81FA600E810B5 /* libDRLibrary.a */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		201DA8A91C055FCA00453605 /* DRBase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 201DA8B31C055FCA00453605 /* Build configuration list for PBXNativeTarget "DRBase" */;
+			buildPhases = (
+				201DA8A61C055FCA00453605 /* Sources */,
+				201DA8A71C055FCA00453605 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DRBase;
+			productName = DRBase;
+			productReference = 201DA8AA1C055FCA00453605 /* libDRBase.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		201DA8A21C055FCA00453605 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = forHappy;
+				TargetAttributes = {
+					201DA8A91C055FCA00453605 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 201DA8A51C055FCA00453605 /* Build configuration list for PBXProject "DRBase" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 201DA8A11C055FCA00453605;
+			productRefGroup = 201DA8AB1C055FCA00453605 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				201DA8A91C055FCA00453605 /* DRBase */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		201DA8A61C055FCA00453605 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2040FF4F1DC1A22900F5284F /* UIButton+factory.m in Sources */,
+				201DA8C21C05652500453605 /* DRNavigationController.m in Sources */,
+				201DA92D1C05BC2400453605 /* NSString+grep.m in Sources */,
+				2040FF491DC193FE00F5284F /* NSMutableArray+safe.m in Sources */,
+				201DA9301C05BC8A00453605 /* UIView+indicator.m in Sources */,
+				203D85DC1C1196C700030046 /* UILabel+DRFactory.m in Sources */,
+				2028305F1CF7F0D500472132 /* DRBaseTableViewController.m in Sources */,
+				2027624B1C084925004E19CD /* DRBaseViewController.m in Sources */,
+				200EA8741CF7065C00097D48 /* NSString+stringSize.m in Sources */,
+				203D85DF1C11990300030046 /* UITextField+DRFactory.m in Sources */,
+				202830591CF7DE7800472132 /* NSDictionary+containKeyOrValue.m in Sources */,
+				2040FF4C1DC1990B00F5284F /* UIColor+colorForCode.m in Sources */,
+				201DA8B01C055FCA00453605 /* DRBase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		201DA8B11C055FCA00453605 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		201DA8B21C055FCA00453605 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		201DA8B41C055FCA00453605 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DRLibrary_SRCROOT = "$(SRCROOT)/../DRLibrary";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(BUILT_PRODUCTS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/DRBase-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DRLibrary_SRCROOT)/DRLibrary",
+					"\"${PODS_ROOT}/Headers/Private/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Private/AFNetworking\"",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "$(inherited)";
+				PODS_ROOT = "$(SRCROOT)/../Pods";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		201DA8B51C055FCA00453605 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DRLibrary_SRCROOT = "$(SRCROOT)/../DRLibrary";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(BUILT_PRODUCTS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/DRBase-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DRLibrary_SRCROOT)/DRLibrary",
+					"\"${PODS_ROOT}/Headers/Private/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Private/AFNetworking\"",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "$(inherited)";
+				PODS_ROOT = "$(SRCROOT)/../Pods";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		201DA8A51C055FCA00453605 /* Build configuration list for PBXProject "DRBase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				201DA8B11C055FCA00453605 /* Debug */,
+				201DA8B21C055FCA00453605 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		201DA8B31C055FCA00453605 /* Build configuration list for PBXNativeTarget "DRBase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				201DA8B41C055FCA00453605 /* Debug */,
+				201DA8B51C055FCA00453605 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 201DA8A21C055FCA00453605 /* Project object */;
+}

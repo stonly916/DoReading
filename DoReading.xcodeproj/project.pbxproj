@@ -1,0 +1,690 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		200EA8711CF6FEF600097D48 /* DRShowTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 200EA8701CF6FEF600097D48 /* DRShowTitleView.m */; };
+		2012196E1BDDC00A0052ED19 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2012196D1BDDC00A0052ED19 /* main.m */; };
+		201219791BDDC00A0052ED19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 201219781BDDC00A0052ED19 /* Assets.xcassets */; };
+		201219A31BDDD06F0052ED19 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 201219A21BDDD06F0052ED19 /* AppDelegate.m */; };
+		201DA9061C058F7B00453605 /* DRTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DA9051C058F7B00453605 /* DRTabBarController.m */; };
+		201DA90A1C0590E100453605 /* DRGetBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DA9091C0590E100453605 /* DRGetBookViewController.m */; };
+		201DA91B1C05B26200453605 /* DownLoadAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DA90F1C05B26200453605 /* DownLoadAlertViewController.m */; };
+		201DA91C1C05B26200453605 /* DownloadLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DA9121C05B26200453605 /* DownloadLog.m */; };
+		201DA91D1C05B26200453605 /* FileDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DA9151C05B26200453605 /* FileDownloadManager.m */; };
+		201DA91E1C05B26200453605 /* FileDownloadRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DA9171C05B26200453605 /* FileDownloadRequest.m */; };
+		201DA91F1C05B26200453605 /* DownLogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DA91A1C05B26200453605 /* DownLogModel.m */; };
+		201DA9271C05B37800453605 /* BooksManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DA9261C05B37800453605 /* BooksManager.m */; };
+		2027624E1C0856E4004E19CD /* BookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2027624D1C0856E4004E19CD /* BookModel.m */; };
+		2028305C1CF7EF9E00472132 /* DRSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2028305B1CF7EF9E00472132 /* DRSetViewController.m */; };
+		202948281C168089003A02A4 /* DRReadBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 202948271C168089003A02A4 /* DRReadBookViewController.m */; };
+		2040FF451DC1920400F5284F /* DRBookSchemeUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2040FF411DC1920400F5284F /* DRBookSchemeUrl.m */; };
+		2040FF461DC1920400F5284F /* DRBookSchemeUrlModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2040FF441DC1920400F5284F /* DRBookSchemeUrlModel.m */; };
+		20484F461C0D3DAB00B1022D /* DRBookDeskTopViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20484F451C0D3DAB00B1022D /* DRBookDeskTopViewCell.m */; };
+		20484F4C1C0D4A1F00B1022D /* DRCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 20484F4B1C0D4A1F00B1022D /* DRCollectionLayout.m */; };
+		20988FF51CF81F3000E810B5 /* libDRBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20988FF31CF81F3000E810B5 /* libDRBase.a */; };
+		20988FF81CF81F5400E810B5 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20988FF71CF81F5400E810B5 /* Pods.framework */; };
+		20E2F1FA1C18258400C763B2 /* DRBookSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E2F1F91C18258400C763B2 /* DRBookSet.m */; };
+		20F148BC1C0C00E700EBE4C5 /* DRAddLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F148B81C0C00E700EBE4C5 /* DRAddLocationViewController.m */; };
+		20F148BD1C0C00E700EBE4C5 /* DRHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F148BA1C0C00E700EBE4C5 /* DRHomeViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F8AD86294916847D3413D33 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		200EA86F1CF6FEF600097D48 /* DRShowTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRShowTitleView.h; sourceTree = "<group>"; };
+		200EA8701CF6FEF600097D48 /* DRShowTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRShowTitleView.m; sourceTree = "<group>"; };
+		201219691BDDC00A0052ED19 /* DoReading.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoReading.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2012196D1BDDC00A0052ED19 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		201219781BDDC00A0052ED19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		201219A11BDDD06F0052ED19 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		201219A21BDDD06F0052ED19 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		201219A61BDDD0C00052ED19 /* DR-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DR-Prefix.pch"; sourceTree = "<group>"; };
+		201219AD1BDDD4970052ED19 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		201DA9041C058F7B00453605 /* DRTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRTabBarController.h; sourceTree = "<group>"; };
+		201DA9051C058F7B00453605 /* DRTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRTabBarController.m; sourceTree = "<group>"; };
+		201DA9081C0590E100453605 /* DRGetBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRGetBookViewController.h; sourceTree = "<group>"; };
+		201DA9091C0590E100453605 /* DRGetBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRGetBookViewController.m; sourceTree = "<group>"; };
+		201DA90E1C05B26200453605 /* DownLoadAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownLoadAlertViewController.h; sourceTree = "<group>"; };
+		201DA90F1C05B26200453605 /* DownLoadAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownLoadAlertViewController.m; sourceTree = "<group>"; };
+		201DA9111C05B26200453605 /* DownloadLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadLog.h; sourceTree = "<group>"; };
+		201DA9121C05B26200453605 /* DownloadLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadLog.m; sourceTree = "<group>"; };
+		201DA9141C05B26200453605 /* FileDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileDownloadManager.h; sourceTree = "<group>"; };
+		201DA9151C05B26200453605 /* FileDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileDownloadManager.m; sourceTree = "<group>"; };
+		201DA9161C05B26200453605 /* FileDownloadRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileDownloadRequest.h; sourceTree = "<group>"; };
+		201DA9171C05B26200453605 /* FileDownloadRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileDownloadRequest.m; sourceTree = "<group>"; };
+		201DA9191C05B26200453605 /* DownLogModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownLogModel.h; sourceTree = "<group>"; };
+		201DA91A1C05B26200453605 /* DownLogModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownLogModel.m; sourceTree = "<group>"; };
+		201DA9251C05B37800453605 /* BooksManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BooksManager.h; sourceTree = "<group>"; };
+		201DA9261C05B37800453605 /* BooksManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BooksManager.m; sourceTree = "<group>"; };
+		2027624C1C0856E4004E19CD /* BookModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookModel.h; sourceTree = "<group>"; };
+		2027624D1C0856E4004E19CD /* BookModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookModel.m; sourceTree = "<group>"; };
+		2028305A1CF7EF9E00472132 /* DRSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRSetViewController.h; sourceTree = "<group>"; };
+		2028305B1CF7EF9E00472132 /* DRSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRSetViewController.m; sourceTree = "<group>"; };
+		202948261C168089003A02A4 /* DRReadBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRReadBookViewController.h; sourceTree = "<group>"; };
+		202948271C168089003A02A4 /* DRReadBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRReadBookViewController.m; sourceTree = "<group>"; };
+		2040FF401DC1920400F5284F /* DRBookSchemeUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRBookSchemeUrl.h; sourceTree = "<group>"; };
+		2040FF411DC1920400F5284F /* DRBookSchemeUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRBookSchemeUrl.m; sourceTree = "<group>"; };
+		2040FF431DC1920400F5284F /* DRBookSchemeUrlModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRBookSchemeUrlModel.h; sourceTree = "<group>"; };
+		2040FF441DC1920400F5284F /* DRBookSchemeUrlModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRBookSchemeUrlModel.m; sourceTree = "<group>"; };
+		20484F441C0D3DAB00B1022D /* DRBookDeskTopViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRBookDeskTopViewCell.h; sourceTree = "<group>"; };
+		20484F451C0D3DAB00B1022D /* DRBookDeskTopViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRBookDeskTopViewCell.m; sourceTree = "<group>"; };
+		20484F4A1C0D4A1F00B1022D /* DRCollectionLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRCollectionLayout.h; sourceTree = "<group>"; };
+		20484F4B1C0D4A1F00B1022D /* DRCollectionLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRCollectionLayout.m; sourceTree = "<group>"; };
+		20988FF31CF81F3000E810B5 /* libDRBase.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libDRBase.a; path = "Build/Products/Debug-iphonesimulator/libDRBase.a"; sourceTree = "<group>"; };
+		20988FF41CF81F3000E810B5 /* libDRLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libDRLibrary.a; path = "Build/Products/Debug-iphonesimulator/libDRLibrary.a"; sourceTree = "<group>"; };
+		20988FF71CF81F5400E810B5 /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = "Build/Products/Debug-iphonesimulator/Pods.framework"; sourceTree = "<group>"; };
+		20E2F1F81C18258400C763B2 /* DRBookSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRBookSet.h; sourceTree = "<group>"; };
+		20E2F1F91C18258400C763B2 /* DRBookSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRBookSet.m; sourceTree = "<group>"; };
+		20F148B71C0C00E700EBE4C5 /* DRAddLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRAddLocationViewController.h; sourceTree = "<group>"; };
+		20F148B81C0C00E700EBE4C5 /* DRAddLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRAddLocationViewController.m; sourceTree = "<group>"; };
+		20F148B91C0C00E700EBE4C5 /* DRHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRHomeViewController.h; sourceTree = "<group>"; };
+		20F148BA1C0C00E700EBE4C5 /* DRHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRHomeViewController.m; sourceTree = "<group>"; };
+		84E78644EEDBF86FF4D538EF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		201219661BDDC00A0052ED19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20988FF81CF81F5400E810B5 /* Pods.framework in Frameworks */,
+				20988FF51CF81F3000E810B5 /* libDRBase.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04EE84CA587D6ED3817803DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20988FF71CF81F5400E810B5 /* Pods.framework */,
+				20988FF31CF81F3000E810B5 /* libDRBase.a */,
+				20988FF41CF81F3000E810B5 /* libDRLibrary.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1EF74BF947FA92E114F18AFB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84E78644EEDBF86FF4D538EF /* Pods.debug.xcconfig */,
+				0F8AD86294916847D3413D33 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		200EA86E1CF6FEF600097D48 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				200EA86F1CF6FEF600097D48 /* DRShowTitleView.h */,
+				200EA8701CF6FEF600097D48 /* DRShowTitleView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		201219601BDDC00A0052ED19 = {
+			isa = PBXGroup;
+			children = (
+				2012196B1BDDC00A0052ED19 /* DoReading */,
+				2012196A1BDDC00A0052ED19 /* Products */,
+				04EE84CA587D6ED3817803DA /* Frameworks */,
+				1EF74BF947FA92E114F18AFB /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		2012196A1BDDC00A0052ED19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				201219691BDDC00A0052ED19 /* DoReading.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2012196B1BDDC00A0052ED19 /* DoReading */ = {
+			isa = PBXGroup;
+			children = (
+				201219A01BDDD0400052ED19 /* Application */,
+				201219A81BDDD1560052ED19 /* Modules */,
+				201DA90B1C05B26200453605 /* SynthesizeCommon */,
+				2012196C1BDDC00A0052ED19 /* Supporting Files */,
+			);
+			path = DoReading;
+			sourceTree = "<group>";
+		};
+		2012196C1BDDC00A0052ED19 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				201219781BDDC00A0052ED19 /* Assets.xcassets */,
+				2012196D1BDDC00A0052ED19 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		201219A01BDDD0400052ED19 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				201219A11BDDD06F0052ED19 /* AppDelegate.h */,
+				201219A21BDDD06F0052ED19 /* AppDelegate.m */,
+				201219A61BDDD0C00052ED19 /* DR-Prefix.pch */,
+				201219A41BDDD0C00052ED19 /* Configuration */,
+				201DA9031C058F5C00453605 /* TabBarController */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		201219A41BDDD0C00052ED19 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				201219AD1BDDD4970052ED19 /* Info.plist */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		201219A81BDDD1560052ED19 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				201219A91BDDD1970052ED19 /* Home */,
+				201DA9071C05908300453605 /* GetBook */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		201219A91BDDD1970052ED19 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				20F148B61C0C00E700EBE4C5 /* Controller */,
+				20F148BB1C0C00E700EBE4C5 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		201DA9031C058F5C00453605 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				201DA9041C058F7B00453605 /* DRTabBarController.h */,
+				201DA9051C058F7B00453605 /* DRTabBarController.m */,
+			);
+			name = TabBarController;
+			path = ../Modules/TabBarController;
+			sourceTree = "<group>";
+		};
+		201DA9071C05908300453605 /* GetBook */ = {
+			isa = PBXGroup;
+			children = (
+				201DA9081C0590E100453605 /* DRGetBookViewController.h */,
+				201DA9091C0590E100453605 /* DRGetBookViewController.m */,
+				2028305A1CF7EF9E00472132 /* DRSetViewController.h */,
+				2028305B1CF7EF9E00472132 /* DRSetViewController.m */,
+				200EA86E1CF6FEF600097D48 /* view */,
+				2040FF3F1DC1920400F5284F /* dataService */,
+			);
+			name = GetBook;
+			path = DoReading/Modules/GetBook;
+			sourceTree = SOURCE_ROOT;
+		};
+		201DA90B1C05B26200453605 /* SynthesizeCommon */ = {
+			isa = PBXGroup;
+			children = (
+				201DA90C1C05B26200453605 /* FileDownload */,
+				201DA9201C05B2C700453605 /* ReadBookManager */,
+				202948251C168089003A02A4 /* DRReadController */,
+			);
+			path = SynthesizeCommon;
+			sourceTree = "<group>";
+		};
+		201DA90C1C05B26200453605 /* FileDownload */ = {
+			isa = PBXGroup;
+			children = (
+				201DA90D1C05B26200453605 /* Controller */,
+				201DA9101C05B26200453605 /* DownLoadLog */,
+				201DA9131C05B26200453605 /* DownService */,
+				201DA9181C05B26200453605 /* Model */,
+			);
+			path = FileDownload;
+			sourceTree = "<group>";
+		};
+		201DA90D1C05B26200453605 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				201DA90E1C05B26200453605 /* DownLoadAlertViewController.h */,
+				201DA90F1C05B26200453605 /* DownLoadAlertViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		201DA9101C05B26200453605 /* DownLoadLog */ = {
+			isa = PBXGroup;
+			children = (
+				201DA9111C05B26200453605 /* DownloadLog.h */,
+				201DA9121C05B26200453605 /* DownloadLog.m */,
+			);
+			path = DownLoadLog;
+			sourceTree = "<group>";
+		};
+		201DA9131C05B26200453605 /* DownService */ = {
+			isa = PBXGroup;
+			children = (
+				201DA9141C05B26200453605 /* FileDownloadManager.h */,
+				201DA9151C05B26200453605 /* FileDownloadManager.m */,
+				201DA9161C05B26200453605 /* FileDownloadRequest.h */,
+				201DA9171C05B26200453605 /* FileDownloadRequest.m */,
+			);
+			path = DownService;
+			sourceTree = "<group>";
+		};
+		201DA9181C05B26200453605 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				201DA9191C05B26200453605 /* DownLogModel.h */,
+				201DA91A1C05B26200453605 /* DownLogModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		201DA9201C05B2C700453605 /* ReadBookManager */ = {
+			isa = PBXGroup;
+			children = (
+				201DA9251C05B37800453605 /* BooksManager.h */,
+				201DA9261C05B37800453605 /* BooksManager.m */,
+				2027624C1C0856E4004E19CD /* BookModel.h */,
+				2027624D1C0856E4004E19CD /* BookModel.m */,
+			);
+			name = ReadBookManager;
+			path = DoReading/SynthesizeCommon/ReadBookManager;
+			sourceTree = SOURCE_ROOT;
+		};
+		202948251C168089003A02A4 /* DRReadController */ = {
+			isa = PBXGroup;
+			children = (
+				202948261C168089003A02A4 /* DRReadBookViewController.h */,
+				202948271C168089003A02A4 /* DRReadBookViewController.m */,
+				20E2F1F81C18258400C763B2 /* DRBookSet.h */,
+				20E2F1F91C18258400C763B2 /* DRBookSet.m */,
+			);
+			path = DRReadController;
+			sourceTree = "<group>";
+		};
+		2040FF3F1DC1920400F5284F /* dataService */ = {
+			isa = PBXGroup;
+			children = (
+				2040FF421DC1920400F5284F /* model */,
+				2040FF401DC1920400F5284F /* DRBookSchemeUrl.h */,
+				2040FF411DC1920400F5284F /* DRBookSchemeUrl.m */,
+			);
+			path = dataService;
+			sourceTree = "<group>";
+		};
+		2040FF421DC1920400F5284F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				2040FF431DC1920400F5284F /* DRBookSchemeUrlModel.h */,
+				2040FF441DC1920400F5284F /* DRBookSchemeUrlModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		20F148B61C0C00E700EBE4C5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				20F148B91C0C00E700EBE4C5 /* DRHomeViewController.h */,
+				20F148BA1C0C00E700EBE4C5 /* DRHomeViewController.m */,
+				20F148B71C0C00E700EBE4C5 /* DRAddLocationViewController.h */,
+				20F148B81C0C00E700EBE4C5 /* DRAddLocationViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		20F148BB1C0C00E700EBE4C5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				20484F441C0D3DAB00B1022D /* DRBookDeskTopViewCell.h */,
+				20484F451C0D3DAB00B1022D /* DRBookDeskTopViewCell.m */,
+				20484F4A1C0D4A1F00B1022D /* DRCollectionLayout.h */,
+				20484F4B1C0D4A1F00B1022D /* DRCollectionLayout.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		201219681BDDC00A0052ED19 /* DoReading */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 201219961BDDC00A0052ED19 /* Build configuration list for PBXNativeTarget "DoReading" */;
+			buildPhases = (
+				E1B9443131673368690B78B3 /* Check Pods Manifest.lock */,
+				201219651BDDC00A0052ED19 /* Sources */,
+				201219661BDDC00A0052ED19 /* Frameworks */,
+				201219671BDDC00A0052ED19 /* Resources */,
+				6999BB3ECC32F5FD45FED671 /* Copy Pods Resources */,
+				ABD7D8D98AFB5BB6F42289BB /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DoReading;
+			productName = DoReading;
+			productReference = 201219691BDDC00A0052ED19 /* DoReading.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		201219611BDDC00A0052ED19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = ForHappy;
+				TargetAttributes = {
+					201219681BDDC00A0052ED19 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = WLV2SY57YT;
+					};
+				};
+			};
+			buildConfigurationList = 201219641BDDC00A0052ED19 /* Build configuration list for PBXProject "DoReading" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 201219601BDDC00A0052ED19;
+			productRefGroup = 2012196A1BDDC00A0052ED19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				201219681BDDC00A0052ED19 /* DoReading */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		201219671BDDC00A0052ED19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				201219791BDDC00A0052ED19 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6999BB3ECC32F5FD45FED671 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABD7D8D98AFB5BB6F42289BB /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1B9443131673368690B78B3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		201219651BDDC00A0052ED19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20F148BD1C0C00E700EBE4C5 /* DRHomeViewController.m in Sources */,
+				202948281C168089003A02A4 /* DRReadBookViewController.m in Sources */,
+				20E2F1FA1C18258400C763B2 /* DRBookSet.m in Sources */,
+				201DA91F1C05B26200453605 /* DownLogModel.m in Sources */,
+				2040FF461DC1920400F5284F /* DRBookSchemeUrlModel.m in Sources */,
+				201DA91E1C05B26200453605 /* FileDownloadRequest.m in Sources */,
+				2027624E1C0856E4004E19CD /* BookModel.m in Sources */,
+				2040FF451DC1920400F5284F /* DRBookSchemeUrl.m in Sources */,
+				2028305C1CF7EF9E00472132 /* DRSetViewController.m in Sources */,
+				20484F4C1C0D4A1F00B1022D /* DRCollectionLayout.m in Sources */,
+				2012196E1BDDC00A0052ED19 /* main.m in Sources */,
+				201219A31BDDD06F0052ED19 /* AppDelegate.m in Sources */,
+				20484F461C0D3DAB00B1022D /* DRBookDeskTopViewCell.m in Sources */,
+				200EA8711CF6FEF600097D48 /* DRShowTitleView.m in Sources */,
+				201DA91C1C05B26200453605 /* DownloadLog.m in Sources */,
+				201DA91D1C05B26200453605 /* FileDownloadManager.m in Sources */,
+				201DA9271C05B37800453605 /* BooksManager.m in Sources */,
+				201DA91B1C05B26200453605 /* DownLoadAlertViewController.m in Sources */,
+				201DA90A1C0590E100453605 /* DRGetBookViewController.m in Sources */,
+				201DA9061C058F7B00453605 /* DRTabBarController.m in Sources */,
+				20F148BC1C0C00E700EBE4C5 /* DRAddLocationViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		201219941BDDC00A0052ED19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		201219951BDDC00A0052ED19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		201219971BDDC00A0052ED19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84E78644EEDBF86FF4D538EF /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = WLV2SY57YT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(BUILT_PRODUCTS_DIR)",
+					"$(PROJECT_DIR)/Build/Products/Debug-iphonesimulator",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/Application/DR-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DRLibrary/DRLibrary",
+					"$(PROJECT_DIR)/DRBase/DRBase/**",
+					"\"${PODS_ROOT}/Headers/Private/Mantle\"",
+				);
+				INFOPLIST_FILE = DoReading/Application/Configuration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Build/Products/Debug-iphonesimulator",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.forhappy.doreading;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		201219981BDDC00A0052ED19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F8AD86294916847D3413D33 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = WLV2SY57YT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(BUILT_PRODUCTS_DIR)",
+					"$(PROJECT_DIR)/Build/Products/Debug-iphonesimulator",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PRODUCT_NAME)/Application/DR-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DRLibrary/DRLibrary",
+					"$(PROJECT_DIR)/DRBase/DRBase/**",
+					"\"${PODS_ROOT}/Headers/Private/Mantle\"",
+				);
+				INFOPLIST_FILE = DoReading/Application/Configuration/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Build/Products/Debug-iphonesimulator",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.forhappy.doreading;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		201219641BDDC00A0052ED19 /* Build configuration list for PBXProject "DoReading" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				201219941BDDC00A0052ED19 /* Debug */,
+				201219951BDDC00A0052ED19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		201219961BDDC00A0052ED19 /* Build configuration list for PBXNativeTarget "DoReading" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				201219971BDDC00A0052ED19 /* Debug */,
+				201219981BDDC00A0052ED19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 201219611BDDC00A0052ED19 /* Project object */;
+}
