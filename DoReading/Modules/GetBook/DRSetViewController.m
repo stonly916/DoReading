@@ -102,7 +102,7 @@
 
 - (void)inputCell:(UITableViewCell *)cell
 {
-    UITextField *inputField = [UITextField createWithfont:DR_FONT_L3 color:DR_COLOR_CODE(@"")];
+//    UITextField *inputField = [UITextField createWithfont:DR_FONT_L3 color:DR_COLOR_CODE(@"")];
 }
 
 

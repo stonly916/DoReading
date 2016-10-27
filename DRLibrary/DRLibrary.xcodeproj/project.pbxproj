@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		203A4AED1BE2291600DB6F4E /* DRLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 203A4AEC1BE2291600DB6F4E /* DRLibrary.m */; };
 		203A4AF61BE2297300DB6F4E /* CFileHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 203A4AF51BE2294A00DB6F4E /* CFileHandle.m */; };
+		204509041DC1E49D009253B3 /* STONLYThreadSemaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = 204509031DC1E2F7009253B3 /* STONLYThreadSemaphore.m */; };
 		20988FFE1CF8202B00E810B5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20988FFD1CF8202B00E810B5 /* UIKit.framework */; };
 		209890001CF8204600E810B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20988FFF1CF8204600E810B5 /* Foundation.framework */; };
 		209890021CF8217200E810B5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 209890011CF8217200E810B5 /* CoreGraphics.framework */; };
@@ -165,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				204509041DC1E49D009253B3 /* STONLYThreadSemaphore.m in Sources */,
 				203A4AED1BE2291600DB6F4E /* DRLibrary.m in Sources */,
 				203A4AF61BE2297300DB6F4E /* CFileHandle.m in Sources */,
 				20DA904E1BE74E6700679210 /* UIViewAdditions.m in Sources */,

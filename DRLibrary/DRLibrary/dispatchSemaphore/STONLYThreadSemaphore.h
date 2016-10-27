@@ -10,7 +10,7 @@
 
 #define ST_SEMAPHORE_LOCK(semString,...) \
 [[STONLYThreadSemaphore shareInstance] semaphoreLock:semString];\
-__VAR_ARGS__;\
+__VA_ARGS__;\
 [[STONLYThreadSemaphore shareInstance] semaphoreUNLock:semString];
 
 @interface STONLYThreadSemaphore : NSObject
