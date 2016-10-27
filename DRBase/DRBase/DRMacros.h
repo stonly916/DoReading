@@ -87,8 +87,6 @@ return cs;\
 #define DR_COLOR_FONT_COOL             DR_COLOR_CODE(@"#2577e3")
 #define DR_COLOR_FONT_PLACEHOLDER      DR_COLOR_CODE(@"#cccccc")
 
-#define  COM_COLOR_BLUE [UIColor colorWithRed:23/255.0 green:152/255.0 blue:185/255.0 alpha:1]
-#define  COLOR_BOOKCOVER_WARM [UIColor colorWithRed:194/255.0 green:117/255.0 blue:32/255.0 alpha:1]
 
 //书本颜色207	140	76
 #define  COLOR_BOOK_ORANGE [UIColor colorWithRed:203/255.0 green:165/255.0 blue:120/255.0 alpha:1]

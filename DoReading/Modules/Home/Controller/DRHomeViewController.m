@@ -98,7 +98,7 @@
 {
     BookModel *model = self.deskBooksArray[indexPath.item];
     DRBookDeskTopViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:DRCollectionCellString forIndexPath:indexPath];
-    cell.backgroundColor = COLOR_BOOKCOVER_WARM;
+    cell.backgroundColor = DR_COLOR_CODE(@"#c27520");
     [cell setName:model.bookName size:[NSString stringWithSize:model.bookSize]];
     return cell;
 }

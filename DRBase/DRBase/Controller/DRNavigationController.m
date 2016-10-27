@@ -18,9 +18,9 @@
     [super viewDidLoad];
     self.automaticallyAdjustsScrollViewInsets = YES;
     self.navigationBar.barStyle = UIBarStyleDefault;
-    self.navigationBar.backgroundColor = COM_COLOR_BLUE;
+    self.navigationBar.backgroundColor = DR_COLOR_CODE(@"#1798bb");
     self.navigationBar.tintColor = [UIColor whiteColor];
-    self.navigationBar.barTintColor = COM_COLOR_BLUE;
+    self.navigationBar.barTintColor = DR_COLOR_CODE(@"#1798bb");
     self.navigationBar.translucent = NO;
 }
 
