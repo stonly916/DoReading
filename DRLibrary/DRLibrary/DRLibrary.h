@@ -10,6 +10,7 @@
 #import <Foundation/Foundation.h>
 #import "CFileHandle/CFileHandle.h"
 #import "UIViewAdditions/UIViewAdditions.h"
+#import "dispatchSemaphore/STONLYThreadSemaphore.h"
 
 @interface DRLibrary : NSObject
 

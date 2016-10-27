@@ -21,6 +21,8 @@
 		203A4AEC1BE2291600DB6F4E /* DRLibrary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DRLibrary.m; sourceTree = "<group>"; };
 		203A4AF41BE2294A00DB6F4E /* CFileHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CFileHandle.h; sourceTree = "<group>"; };
 		203A4AF51BE2294A00DB6F4E /* CFileHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CFileHandle.m; sourceTree = "<group>"; };
+		204509021DC1E2F7009253B3 /* STONLYThreadSemaphore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STONLYThreadSemaphore.h; sourceTree = "<group>"; };
+		204509031DC1E2F7009253B3 /* STONLYThreadSemaphore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STONLYThreadSemaphore.m; sourceTree = "<group>"; };
 		20988FFD1CF8202B00E810B5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		20988FFF1CF8204600E810B5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		209890011CF8217200E810B5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -66,6 +68,7 @@
 				203A4AEC1BE2291600DB6F4E /* DRLibrary.m */,
 				20DA904B1BE74E2E00679210 /* UIViewAdditions */,
 				203A4AF31BE2294A00DB6F4E /* CFileHandle */,
+				204509011DC1E2F7009253B3 /* dispatchSemaphore */,
 			);
 			path = DRLibrary;
 			sourceTree = "<group>";
@@ -77,6 +80,15 @@
 				203A4AF51BE2294A00DB6F4E /* CFileHandle.m */,
 			);
 			path = CFileHandle;
+			sourceTree = "<group>";
+		};
+		204509011DC1E2F7009253B3 /* dispatchSemaphore */ = {
+			isa = PBXGroup;
+			children = (
+				204509021DC1E2F7009253B3 /* STONLYThreadSemaphore.h */,
+				204509031DC1E2F7009253B3 /* STONLYThreadSemaphore.m */,
+			);
+			path = dispatchSemaphore;
 			sourceTree = "<group>";
 		};
 		206D2BAD1C04137600EE3E4C /* Framework */ = {
