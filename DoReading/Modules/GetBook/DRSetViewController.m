@@ -82,7 +82,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 75.f;
+    return 45.f;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -97,14 +97,62 @@
     }
 }
 
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.section == 1) {
+        return UITableViewCellEditingStyleDelete;
+    }
+    return UITableViewCellEditingStyleNone;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.section == 1) {
+        if (editingStyle == UITableViewCellEditingStyleDelete) {
+            [self.titleArray removeObjectAtIndex:indexPath.row];
+            [self.urlArray removeObjectAtIndex:indexPath.row];
+            [share(DRBookSchemeUrl) removeBookShcemeUrlModelAtIndex:indexPath.row];
+            [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        }
+    }
+}
 
 #pragma mark - create cell
 
 - (void)inputCell:(UITableViewCell *)cell
 {
-//    UITextField *inputField = [UITextField createWithfont:DR_FONT_L3 color:DR_COLOR_CODE(@"")];
+    UITextField *inputField = [UITextField createWithfont:DR_FONT_L3 color:nil];
+    if (share(DRBookSchemeUrl).defaultBookWeb == nil) {
+        inputField.text = @"http://www.";
+    }else {
+        inputField.placeholder = share(DRBookSchemeUrl).defaultBookWeb.baseUrl;
+    }
+    
+    [cell.contentView addSubview:inputField];
+    [inputField mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(UIEdgeInsetsMake(5.f, DR_UI_MARGIN, 5.f, 5+75+DR_UI_MARGIN));
+    }];
+    self.inputField = inputField;
+    
+    UIButton *btn = [UIButton createButton:DRButtonTypeDefault];
+    [btn setTitle:@"完成" forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(inputOkClick) forControlEvents:UIControlEventTouchUpInside];
+    [cell.contentView addSubview:btn];
+    [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.bottom.equalTo(inputField);
+        make.right.equalTo(cell.contentView).offset(-DR_UI_MARGIN);
+        make.width.equalTo(@75.f);
+    }];
 }
 
+- (void)inputOkClick
+{
+    if (self.setBookSchemeUrlBlock && self.inputField.text.length) {
+        self.setBookSchemeUrlBlock(self.inputField.text);
+        BookWebInfoModel *model = [BookWebInfoModel new];
+        model.baseUrl = self.inputField.text;
+        [share(DRBookSchemeUrl) addToBookWebList:model];
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+}
 
 #pragma mark - UITextFieldDelegate
 

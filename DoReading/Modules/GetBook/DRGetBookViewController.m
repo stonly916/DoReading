@@ -12,7 +12,9 @@
 
 @interface DRGetBookViewController ()<UIWebViewDelegate>
 
-@property (nonatomic, strong) NSString *currentRequestString;
+@property (nonatomic, copy) NSString *currentRequestString;
+
+@property (nonatomic, copy) NSString *willRequestString;
 
 @property (nonatomic, strong) UIWebView *webView;
 
@@ -32,28 +34,20 @@
     
     self.keyBoardWillShow = YES;
 
-    _webView = [UIWebView new];
+    _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT-64-49-30)];
     _webView.delegate = self;
     [self.view addSubview:_webView];
     
+    UIView *bootomView = [self createBottomView];
+    bootomView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:bootomView];
     @weakify(self);
-    [_webView mas_makeConstraints:^(MASConstraintMaker *make) {
+    [bootomView mas_makeConstraints:^(MASConstraintMaker *make) {
         @strongify(self);
-        make.edges.equalTo(self.view);
+        make.bottom.equalTo(self.view.mas_bottom);
+        make.left.right.equalTo(self.view);
+        make.height.equalTo(@30);
     }];
-
-//    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"主页" style:UIBarButtonItemStyleDone target:self action:@selector(homeItemClick)];
-//    
-//    UIView *bootomView = [self createBottomView];
-//    bootomView.backgroundColor = [UIColor whiteColor];
-//    [self.view addSubview:bootomView];
-//    @weakify(self);
-//    [bootomView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        @strongify(self);
-//        make.bottom.equalTo(self.view.mas_bottom).offset(-49);
-//        make.left.right.equalTo(_webView);
-//        make.height.equalTo(@30);
-//    }];
     
     [self createTitleView];
     [self createRightItem];
@@ -62,9 +56,10 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [[NSURLCache sharedURLCache] removeAllCachedResponses];
-    if (self.currentRequestString.length > 0) {
-        [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.currentRequestString]]];
+    
+    if (self.willRequestString.length > 0 && ![self.willRequestString isEqualToString:self.currentRequestString]) {
+        [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.willRequestString]]];
+        self.currentRequestString = self.willRequestString;
     }
 }
 
@@ -98,13 +93,15 @@
 
 - (void)setBookSchemeUrl:(NSString *)urlStr
 {
-    self.currentRequestString = urlStr;
+    self.willRequestString = urlStr;
 }
 
-/*
+
 - (UIView *)createBottomView
 {
     UIView *bottom = [UIView new];
+    bottom.layer.borderColor = DR_COLOR_COMMON_BLUE.CGColor;
+    bottom.layer.borderWidth = 0.3f;
     
     _lastBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [_lastBtn setImage:[UIImage imageNamed:@"arrow_left_no"] forState:UIControlStateNormal];
@@ -171,9 +168,9 @@
         }
         return NO;
     }
-    self.currentRequestString = currentUrlString;
     return YES;
 }
+
 
 - (void)webViewDidStartLoad:(UIWebView *)webView
 {
@@ -213,16 +210,16 @@
     }
 }
 
-- (void)homeItemClick
-{
-    //清除UIWebView的缓存
-    [[NSURLCache sharedURLCache] removeAllCachedResponses];
-    if (self.currentRequestString.length > 0) {
-        NSURL *url = [NSURL URLWithString:@"http://www.qingkan.net"];
-        NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
-        [_webView loadRequest:request];
-    }
-}
+//- (void)homeItemClick
+//{
+//    //清除UIWebView的缓存
+//    [[NSURLCache sharedURLCache] removeAllCachedResponses];
+//    if (self.currentRequestString.length > 0) {
+//        NSURL *url = [NSURL URLWithString:@"http://www.qingkan.net"];
+//        NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
+//        [_webView loadRequest:request];
+//    }
+//}
 
 //停止
 - (void)stopWebRequest
@@ -232,10 +229,6 @@
 //刷新
 - (void)refreshWebRequest
 {
-//    if (self.currentRequestString.length > 0) {
-//        NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:self.currentRequestString]];
-//        [_webView loadRequest:request];
-//    }
     [self.webView reload];
 }
 //后退
@@ -248,7 +241,7 @@
 {
     [self.webView goForward];
 }
-*/
+
 #pragma mark - shouldDoForKeyBoard
 
 -(void)shouldDoForKeyBoardWillShow:(CGFloat)height

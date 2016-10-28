@@ -10,11 +10,15 @@
 
 @interface DRBookSchemeUrl : NSObject
 
-@property (nonatomic, strong) NSMutableDictionary *bookWebList;
-@property (nonatomic, strong) BookWebInfoModel *defaultBookWeb;
+- (BookWebInfoModel *)defaultBookWeb;
+- (NSMutableArray *)bookWebList;
 
 + (DRBookSchemeUrl *)sharedInstance;
 
 - (void)initBaseInfo;
+
+- (void)addToBookWebList:(BookWebInfoModel *)model;
+- (void)removeBookShcemeUrlModel:(BookWebInfoModel *)model;
+- (void)removeBookShcemeUrlModelAtIndex:(NSUInteger)index;
 
 @end

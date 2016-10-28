@@ -21,6 +21,7 @@
     [super loadView];
     self.tableView = [UITableView new];
     self.tableView.tableFooterView = [UIView new];
+    self.tableView.backgroundColor = DR_COLOR_COMMON_BG;
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     [self.view addSubview:self.tableView];

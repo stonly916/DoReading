@@ -14,4 +14,6 @@ typedef NS_ENUM(NSUInteger, DRButtonType) {
 
 @interface UIButton (factory)
 
++ (UIButton *)createButton:(DRButtonType)type;
+
 @end

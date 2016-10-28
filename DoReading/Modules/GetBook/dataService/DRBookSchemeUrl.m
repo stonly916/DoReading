@@ -16,9 +16,7 @@
 
 @end
 
-@implementation DRBookSchemeUrl{
-    OSSpinLock _storeLock;
-}
+@implementation DRBookSchemeUrl
 
 IMP_SINGLETON(DRBookSchemeUrl)
 
@@ -31,8 +29,6 @@ IMP_SINGLETON(DRBookSchemeUrl)
 
 - (void)initBaseInfo
 {
-    _storeLock = OS_SPINLOCK_INIT;
-    
     self.bookShcemePath = [self.globalInfoDirectory stringByAppendingPathComponent:@"bookSchemeUrl"];
     
     NSDictionary *infoDict = [NSDictionary dictionaryWithContentsOfFile:self.bookShcemePath];
@@ -49,26 +45,37 @@ IMP_SINGLETON(DRBookSchemeUrl)
     }
 }
 
-- (NSMutableArray *)bookWebList
-{
-    return self.globalModel.bookWebList;
-}
-
-- (void)setBookWebList:(NSMutableArray *)bookWebList
-{
-    self.globalModel.bookWebList = bookWebList;
-    [self storeGeneralInfo];
-}
-
 - (BookWebInfoModel *)defaultBookWeb
 {
     return self.globalModel.defaultBookWeb;
 }
 
--(void)setDefaultBookWeb:(BookWebInfoModel *)defaultBookWeb
+- (NSMutableArray *)bookWebList
 {
-    self.globalModel.defaultBookWeb = defaultBookWeb;
+    return self.globalModel.bookWebList;
+}
+
+- (void)addToBookWebList:(BookWebInfoModel *)model
+{
+    self.globalModel.defaultBookWeb = model;
+    [self.globalModel.bookWebList addObject:model];
     [self storeGeneralInfo];
+}
+
+- (void)removeBookShcemeUrlModelAtIndex:(NSUInteger)index
+{
+    if (self.globalModel.bookWebList.count > index) {
+        [self.globalModel.bookWebList removeObjectAtIndex:index];
+        [self storeGeneralInfo];
+    }
+}
+
+- (void)removeBookShcemeUrlModel:(BookWebInfoModel *)model
+{
+    if ([self.globalModel.bookWebList containsObject:model]) {
+        [self.globalModel.bookWebList removeObject:model];
+        [self storeGeneralInfo];
+    }
 }
 
 - (void)storeGeneralInfo
@@ -78,9 +85,8 @@ IMP_SINGLETON(DRBookSchemeUrl)
             NSError *error = nil;
             NSDictionary *dict = [MTLJSONAdapter JSONDictionaryFromModel:self.globalModel error:&error];
             if (!error) {
-                OSSpinLockLock(&_storeLock);
-                [dict writeToURL:[NSURL fileURLWithPath:self.bookShcemePath] atomically:YES];
-                OSSpinLockUnlock(&_storeLock);
+                ST_SEMAPHORE_LOCK(@"bookSchemeLock",[dict writeToURL:[NSURL fileURLWithPath:self.bookShcemePath] atomically:YES]);
+                ;
             }
         }
     });

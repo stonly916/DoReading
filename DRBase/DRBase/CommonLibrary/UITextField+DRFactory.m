@@ -17,6 +17,8 @@
     }
     if (textColor) {
         t.textColor = textColor;
+    }else {
+        t.textColor = DR_COLOR_FONT_DARK;
     }
     
     t.layer.borderColor = [UIColor grayColor].CGColor;

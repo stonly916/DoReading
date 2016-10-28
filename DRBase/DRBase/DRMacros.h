@@ -73,6 +73,7 @@ return cs;\
 #define DR_COLOR_CODE(code) [UIColor colorWithCode:code]
 
 // 通用颜色
+#define DR_COLOR_COMMON_BLUE           DR_COLOR_CODE(@"#1798bb")
 #define DR_COLOR_COMMON_BG             DR_COLOR_CODE(@"#f4f4f4")
 #define DR_COLOR_SEPARATOR             DR_COLOR_CODE(@"#e1e1e1")
 #define DR_COLOR_UNEDIT_INPUT_BG       DR_COLOR_CODE(@"#f6f6f6")

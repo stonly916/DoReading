@@ -38,6 +38,15 @@
 
 @implementation BookWebInfoModel
 
+-(instancetype)init
+{
+    if (self = [super init]) {
+        self.baseUrl = @"";
+        self.webName = @"";
+    }
+    return self;
+}
+
 + (NSDictionary *)JSONKeyPathsByPropertyKey
 {
     return @{

@@ -21,6 +21,8 @@
     [super viewDidLoad];
     self.view.backgroundColor = DR_COLOR_COMMON_BG;
     
+    self.tabBar.translucent = NO;
+    
     DRHomeViewController *homeVc = [[DRHomeViewController alloc] init];
     homeVc.title = @"读";
     DRNavigationController *homeNc = [[DRNavigationController alloc] initWithRootViewController:homeVc];
