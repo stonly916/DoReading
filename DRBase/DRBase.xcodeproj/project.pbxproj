@@ -17,6 +17,8 @@
 		2028305F1CF7F0D500472132 /* DRBaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2028305E1CF7F0D500472132 /* DRBaseTableViewController.m */; };
 		203D85DC1C1196C700030046 /* UILabel+DRFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 203D85DB1C1196C700030046 /* UILabel+DRFactory.m */; };
 		203D85DF1C11990300030046 /* UITextField+DRFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 203D85DE1C11990300030046 /* UITextField+DRFactory.m */; };
+		203FD3301DCC8C2D004207FD /* NSString+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = 203FD32F1DCC8C2D004207FD /* NSString+URL.m */; };
+		203FD3331DCC8CBC004207FD /* NSStringEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 203FD3321DCC8CBC004207FD /* NSStringEx.m */; };
 		2040FF491DC193FE00F5284F /* NSMutableArray+safe.m in Sources */ = {isa = PBXBuildFile; fileRef = 2040FF481DC193FE00F5284F /* NSMutableArray+safe.m */; };
 		2040FF4C1DC1990B00F5284F /* UIColor+colorForCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2040FF4B1DC1990B00F5284F /* UIColor+colorForCode.m */; };
 		2040FF4F1DC1A22900F5284F /* UIButton+factory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2040FF4E1DC1A22900F5284F /* UIButton+factory.m */; };
@@ -48,6 +50,10 @@
 		203D85DB1C1196C700030046 /* UILabel+DRFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+DRFactory.m"; sourceTree = "<group>"; };
 		203D85DD1C11990300030046 /* UITextField+DRFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+DRFactory.h"; sourceTree = "<group>"; };
 		203D85DE1C11990300030046 /* UITextField+DRFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+DRFactory.m"; sourceTree = "<group>"; };
+		203FD32E1DCC8C2D004207FD /* NSString+URL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URL.h"; sourceTree = "<group>"; };
+		203FD32F1DCC8C2D004207FD /* NSString+URL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URL.m"; sourceTree = "<group>"; };
+		203FD3311DCC8CBC004207FD /* NSStringEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStringEx.h; sourceTree = "<group>"; };
+		203FD3321DCC8CBC004207FD /* NSStringEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringEx.m; sourceTree = "<group>"; };
 		2040FF471DC193FE00F5284F /* NSMutableArray+safe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+safe.h"; sourceTree = "<group>"; };
 		2040FF481DC193FE00F5284F /* NSMutableArray+safe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+safe.m"; sourceTree = "<group>"; };
 		2040FF4A1DC1990B00F5284F /* UIColor+colorForCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+colorForCode.h"; sourceTree = "<group>"; };
@@ -127,6 +133,10 @@
 			children = (
 				200EA8721CF7065C00097D48 /* NSString+stringSize.h */,
 				200EA8731CF7065C00097D48 /* NSString+stringSize.m */,
+				203FD3311DCC8CBC004207FD /* NSStringEx.h */,
+				203FD3321DCC8CBC004207FD /* NSStringEx.m */,
+				203FD32E1DCC8C2D004207FD /* NSString+URL.h */,
+				203FD32F1DCC8C2D004207FD /* NSString+URL.m */,
 				201DA92B1C05BC2400453605 /* NSString+grep.h */,
 				201DA92C1C05BC2400453605 /* NSString+grep.m */,
 				202830571CF7DE7800472132 /* NSDictionary+containKeyOrValue.h */,
@@ -218,9 +228,11 @@
 				201DA9301C05BC8A00453605 /* UIView+indicator.m in Sources */,
 				203D85DC1C1196C700030046 /* UILabel+DRFactory.m in Sources */,
 				2028305F1CF7F0D500472132 /* DRBaseTableViewController.m in Sources */,
+				203FD3301DCC8C2D004207FD /* NSString+URL.m in Sources */,
 				2027624B1C084925004E19CD /* DRBaseViewController.m in Sources */,
 				200EA8741CF7065C00097D48 /* NSString+stringSize.m in Sources */,
 				203D85DF1C11990300030046 /* UITextField+DRFactory.m in Sources */,
+				203FD3331DCC8CBC004207FD /* NSStringEx.m in Sources */,
 				202830591CF7DE7800472132 /* NSDictionary+containKeyOrValue.m in Sources */,
 				2040FF4C1DC1990B00F5284F /* UIColor+colorForCode.m in Sources */,
 				201DA8B01C055FCA00453605 /* DRBase.m in Sources */,

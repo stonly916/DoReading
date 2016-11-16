@@ -10,6 +10,8 @@
 
 #import "NSString+stringSize.h"
 #import "NSString+grep.h"
+#import "NSString+URL.h"
+#import "NSStringEx.h"
 
 #import "NSDictionary+containKeyOrValue.h"
 #import "NSMutableArray+safe.h"

@@ -58,7 +58,9 @@
     [super viewWillAppear:animated];
     
     if (self.willRequestString.length > 0 && ![self.willRequestString isEqualToString:self.currentRequestString]) {
-        [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.willRequestString]]];
+        [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[self.willRequestString getLinkWithText]
+                                                   cachePolicy:NSURLRequestReturnCacheDataElseLoad
+                                               timeoutInterval:30]];
         self.currentRequestString = self.willRequestString;
     }
 }
