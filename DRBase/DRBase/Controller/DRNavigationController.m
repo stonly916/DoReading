@@ -22,6 +22,8 @@
     self.navigationBar.tintColor = [UIColor whiteColor];
     self.navigationBar.barTintColor = DR_COLOR_COMMON_BLUE;
     self.navigationBar.translucent = NO;
+    
+    [self.navigationBar setShadowImage:[UIImage new]];
 }
 
 @end

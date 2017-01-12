@@ -20,6 +20,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+        frame.size.height -= 5.f;
         self.bookSetter = [[DRBookSet alloc] initWithString:text inSize:frame.size];
         [self createUI];
     }
@@ -68,9 +69,10 @@
 }
 
 - (CGRect)textRectForBounds:(CGRect)bounds limitedToNumberOfLines:(NSInteger)numberOfLines {
-    bounds = [super textRectForBounds:bounds limitedToNumberOfLines:numberOfLines];
-    bounds.origin.y = MIN((self.height - bounds.size.height)/2.f, 2.25f);
-    return bounds;
+    CGRect textRect = [super textRectForBounds:bounds limitedToNumberOfLines:numberOfLines];
+    //字体显示顶端对齐
+    textRect.origin.y =  5.55f;
+    return textRect;
 }
 
 -(void)drawTextInRect:(CGRect)rect

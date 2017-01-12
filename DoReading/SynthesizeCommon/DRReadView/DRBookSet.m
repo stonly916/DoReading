@@ -94,8 +94,8 @@
 {
     _fontSize = 16.f;
     _firstLineInset = 0.;
-    _lineSpacing = 2.25f;
-    _paragraphSpacing = 5.f;
+    _lineSpacing = 5.f;
+    _paragraphSpacing = 10.f;
     if (_attributes == nil) {
         NSMutableDictionary * attributes = [NSMutableDictionary dictionary];
         UIFont * font = [UIFont fontWithName:@"KaiTi_GB2312" size:_fontSize];
@@ -123,7 +123,9 @@
 -(void)setFontSize:(CGFloat)fontSize
 {
     _fontSize = fontSize;
-    [(UIFont *)self.attributes[NSFontAttributeName] fontWithSize:fontSize];
+    UIFont *font = [(UIFont *)self.attributes[NSFontAttributeName] fontWithSize:fontSize];
+    self.attributes[NSFontAttributeName] = font;
+    self.bookAttributedContent = [[NSAttributedString alloc] initWithString:self.bookContent attributes:self.attributes];
 }
 
 - (void)setAttributesForBooks:(NSMutableDictionary *)attributes

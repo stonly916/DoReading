@@ -96,13 +96,14 @@
 - (void)initReadView:(NSString *)string
 {
     self.readView = [[DRReadView alloc] initWithFrame:CGRectMake(0.f, 0.f, self.view.width, [UIScreen mainScreen].bounds.size.height - 64 - 20) text:string];
+    [self.view addSubview:self.readView];
     @weakify(self);
     self.readView.finishRoll = ^(NSInteger position){
         @strongify(self);
         [self bookFinishedRoll:position];
     };
     [self.readView rollPageToPostion:self.deskBookModel.bookMark];
-    [self.view addSubview:self.readView];
+    
 }
 
 #pragma mark - 设置选项
