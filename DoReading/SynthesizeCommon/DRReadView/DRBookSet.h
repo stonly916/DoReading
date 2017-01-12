@@ -20,18 +20,22 @@ typedef NS_ENUM(NSUInteger, DRReadDirection) {
 @property (nonatomic, assign) NSUInteger currentWords;
 @property (nonatomic, assign) NSRange currentRange;
 
+
+@property (nonatomic, assign) CGFloat firstLineInset;
+@property (nonatomic, assign) CGFloat fontSize;
 @property (nonatomic, assign) CGFloat paragraphSpacing;
 @property (nonatomic, assign) CGFloat lineSpacing;
 
+@property (nonatomic, strong) NSMutableDictionary *attributes;
+
 - (instancetype)initWithString:(NSString *)bookContent inSize:(CGSize)size;
 - (void)setAttributesForBooks:(NSDictionary *)attributes;
-//- (NSRange)rangeWithPosition:(NSInteger)position;
-- (NSAttributedString *)stringWithPosition:(NSInteger)position direction:(DRReadDirection)direction;
 
-- (NSAttributedString *)substringWithRange:(NSRange)range;
+- (NSAttributedString *)stringWithPosition:(NSInteger)position direction:(DRReadDirection)direction;
 
 - (NSAttributedString *)lastString;
 - (NSAttributedString *)nextString;
-- (CGFloat)rate;
-- (NSAttributedString *)showAttributedString;
+- (CGFloat)rate;    //0-100
+- (NSAttributedString *)rollToRate:(CGFloat)rate;
+
 @end

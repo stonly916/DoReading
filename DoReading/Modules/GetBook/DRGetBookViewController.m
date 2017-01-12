@@ -58,9 +58,7 @@
     [super viewWillAppear:animated];
     
     if (self.willRequestString.length > 0 && ![self.willRequestString isEqualToString:self.currentRequestString]) {
-        [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[self.willRequestString getLinkWithText]
-                                                   cachePolicy:NSURLRequestReturnCacheDataElseLoad
-                                               timeoutInterval:30]];
+        [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:[self.willRequestString getLinkWithText]] cachePolicy:NSURLRequestReturnCacheDataElseLoad timeoutInterval:30]];
         self.currentRequestString = self.willRequestString;
     }
 }
@@ -186,7 +184,7 @@
     [self resetBottomState];
 }
 
-- (void)webView:(UIWebView *)webView didFailLoadWithError:(nullable NSError *)error
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
 {
     self.stopBtn.hidden = YES;
     self.refreshBtn.hidden = NO;

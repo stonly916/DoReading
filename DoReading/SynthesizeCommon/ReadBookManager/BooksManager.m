@@ -307,10 +307,11 @@
     });
 }
 
-#pragma mark - 更新书桌记录
+#pragma mark - 查看书桌记录
 + (void)bookModelsInDeskLog:(void(^)(NSArray *modelArray))completed
 {
     BooksManager *manager = [BooksManager manager];
+
     if(manager.booksDeskDict.count > 0) {
         completed(manager.booksDeskDict.allValues);
     } else {

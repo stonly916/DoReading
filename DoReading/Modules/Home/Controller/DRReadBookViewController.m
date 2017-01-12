@@ -7,6 +7,7 @@
 //
 
 #import "DRReadBookViewController.h"
+#import "DRReadView.h"
 #import "DRBookSet.h"
 
 @interface DRReadBookViewController ()<UITextFieldDelegate>
@@ -18,7 +19,7 @@
 //书籍内容
 @property (nonatomic, copy) NSString *bookContent;
 
-@property (nonatomic, strong) DRBookSet *bookSetter;
+@property (nonatomic, strong) DRReadView *readView;
 
 //设置View
 @property (nonatomic, strong) UIView *setView;
@@ -29,9 +30,7 @@
 
 @property (nonatomic, strong) UITapGestureRecognizer *tap;
 
-@property (nonatomic, strong) UILabel *bookLabel;
 
-@property (nonatomic, assign) NSUInteger currentPosition;
 
 @property (nonatomic, strong) NSMutableDictionary *settingInfo;
 
@@ -51,43 +50,26 @@
     self.title = self.deskBookModel.bookName;
     self.view.backgroundColor = COLOR_BOOK_ORANGE;
     
-    _bookLabel = [[UILabel alloc] initWithFrame:CGRectMake(5.f, 0, self.view.width - 10.f, [UIScreen mainScreen].bounds.size.height - 64 - 20)];
-    _bookLabel.userInteractionEnabled = YES;
-    _bookLabel.textColor = [UIColor blackColor];
-    _bookLabel.numberOfLines = 0;
-    _bookLabel.backgroundColor = [UIColor clearColor];
-    [self.view addSubview:_bookLabel];
-    
+
     [self createBottomView];
-    
+
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"setting"] style:UIBarButtonItemStyleDone target:self action:@selector(settingItemClick:)];
-    
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapClick:)];
-    tap.numberOfTouchesRequired = 1;
-    [_bookLabel addGestureRecognizer:tap];
-    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panClick:)];
-    [_bookLabel addGestureRecognizer:pan];
-    
+
     @weakify(self);
     [self.view showIndicator];
     [BooksManager bookDateForLocatin:self.deskBookModel.bookName completed:^(NSData *data, NSStringEncoding encode, NSError *error) {
         @strongify(self);
+        [self.view dismissIndicator];
         if (data == nil && error == nil) {
             UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"温馨提示" message:@"此书已被删除" preferredStyle:UIAlertControllerStyleAlert];
             UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:nil];
             [alertController addAction:sureAction];
             [self presentViewController:alertController animated:YES completion:nil];
+        }else {
+            NSString *str = [[NSString alloc] initWithData:data encoding:encode];
+            [self initReadView:str];
         }
-        NSString *str = [[NSString alloc] initWithData:data encoding:encode];
-        [self bookLabelWithContentString:str];
-        [self.view dismissIndicator];
     }];
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    self.hidesBottomBarWhenPushed = YES;
 }
 
 - (void)createBottomView
@@ -108,6 +90,19 @@
         make.height.equalTo(bottomView);
         make.right.equalTo(bottomView).offset(-5);
     }];
+}
+
+#pragma  mark - 
+- (void)initReadView:(NSString *)string
+{
+    self.readView = [[DRReadView alloc] initWithFrame:CGRectMake(0.f, 0.f, self.view.width, [UIScreen mainScreen].bounds.size.height - 64 - 20) text:string];
+    @weakify(self);
+    self.readView.finishRoll = ^(NSInteger position){
+        @strongify(self);
+        [self bookFinishedRoll:position];
+    };
+    [self.readView rollPageToPostion:self.deskBookModel.bookMark];
+    [self.view addSubview:self.readView];
 }
 
 #pragma mark - 设置选项
@@ -184,12 +179,12 @@
         [self.setView removeFromSuperview];
     }];
 }
+
 #pragma mark - 设置按钮点击确定
 - (void)setSureBtnClick:(UIButton *)btn
 {
     NSString *progress = _progressField.text;
-    NSInteger position = (NSInteger)(self.bookContent.length * progress.floatValue / 100);
-    [self bookLabelShowNextPageWithPosition:position];
+    [self.readView rollPageToPercent:progress.floatValue/100.f];
     [self removeCover];
 }
 #pragma mark - UITextFiledDelegate
@@ -203,84 +198,17 @@
             return YES;
         }
     }
-    
     return NO;
 }
 
-#pragma mark - 初始化内容
-- (void)bookLabelWithContentString:(NSString *)str
-{
-    _bookSetter = [[DRBookSet alloc] initWithString:str inSize:_bookLabel.size];
-    self.currentPosition = self.deskBookModel.bookMark;
-    self.bookContent = str;
-    [self bookLabelShowNextPageWithPosition:self.currentPosition];
-}
-
-//- (void)bookLabelFont:(UIFont *)font currentPosition:(NSUInteger)position wordNum:(NSUInteger)words
-//{
-//    _bookLabel.font = font;
-//    _bookLabel.text = [self.bookContent substringWithRange:NSMakeRange(position, words)];
-//    [_bookLabel sizeToFit];
-//    self.currentPosition = position;
-//    [self bookShowedNext];
-//}
-
-- (void)bookLabelShowNextPageWithPosition:(NSUInteger)position
-{
-    _bookLabel.attributedText = [self.bookSetter stringWithPosition:position direction:DRReadNext];
-    [self bookShowedNext];
-}
-
-//显示下一页，会自动增加 当前位置currentPosition
-- (void)bookLabelShowNextPage
-{
-   NSAttributedString *str = self.bookSetter.nextString;
-    if (str.length > 0) {
-        _bookLabel.attributedText = str;
-        [self bookShowedNext];
-    }
-}
-
-//显示上一页，会自动减少 当前位置currentPosition
-- (void)bookLabelShowLastPage
-{
-    NSAttributedString *str = self.bookSetter.lastString;
-    if (str.length > 0) {
-        _bookLabel.attributedText = str;
-        [self bookShowedNext];
-    }
-}
 
 //翻页后存储
-- (void)bookShowedNext
+- (void)bookFinishedRoll:(NSInteger)position
 {
-    self.deskBookModel.bookMark = self.bookSetter.position;
-    NSString *str = [NSString stringWithFormat:@"%.2f%%",self.bookSetter.rate];
+    self.deskBookModel.bookMark = position;
+    NSString *str = [NSString stringWithFormat:@"%.2f%%",self.readView.bookSetter.rate];
     self.rateLabel.text = str;
     [BooksManager storeDeskLog];
-}
-
-#pragma mark - UIGesture
-- (void)tapClick:(UITapGestureRecognizer *)tap
-{
-    CGPoint point = [tap locationInView:_bookLabel];
-    if (tap.state == UIGestureRecognizerStateEnded) {
-        if (point.x >= _bookLabel.width/2) {
-            [self bookLabelShowNextPage];
-        }else {
-            [self bookLabelShowLastPage];
-        }
-    }
-}
-
-- (void)panClick:(UIPanGestureRecognizer *)pan
-{
-    
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

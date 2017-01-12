@@ -21,16 +21,18 @@
 		201DA9271C05B37800453605 /* BooksManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 201DA9261C05B37800453605 /* BooksManager.m */; };
 		2027624E1C0856E4004E19CD /* BookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2027624D1C0856E4004E19CD /* BookModel.m */; };
 		2028305C1CF7EF9E00472132 /* DRSetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2028305B1CF7EF9E00472132 /* DRSetViewController.m */; };
-		202948281C168089003A02A4 /* DRReadBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 202948271C168089003A02A4 /* DRReadBookViewController.m */; };
 		2040FF451DC1920400F5284F /* DRBookSchemeUrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2040FF411DC1920400F5284F /* DRBookSchemeUrl.m */; };
 		2040FF461DC1920400F5284F /* DRBookSchemeUrlModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2040FF441DC1920400F5284F /* DRBookSchemeUrlModel.m */; };
 		20484F461C0D3DAB00B1022D /* DRBookDeskTopViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20484F451C0D3DAB00B1022D /* DRBookDeskTopViewCell.m */; };
 		20484F4C1C0D4A1F00B1022D /* DRCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 20484F4B1C0D4A1F00B1022D /* DRCollectionLayout.m */; };
 		20988FF51CF81F3000E810B5 /* libDRBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20988FF31CF81F3000E810B5 /* libDRBase.a */; };
 		20988FF81CF81F5400E810B5 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20988FF71CF81F5400E810B5 /* Pods.framework */; };
-		20E2F1FA1C18258400C763B2 /* DRBookSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E2F1F91C18258400C763B2 /* DRBookSet.m */; };
 		20F148BC1C0C00E700EBE4C5 /* DRAddLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F148B81C0C00E700EBE4C5 /* DRAddLocationViewController.m */; };
 		20F148BD1C0C00E700EBE4C5 /* DRHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F148BA1C0C00E700EBE4C5 /* DRHomeViewController.m */; };
+		2851DE5F1E260F5500EE9203 /* 楷体_GB2312.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2851DE5E1E260F5500EE9203 /* 楷体_GB2312.ttf */; };
+		2861CCC81E2768DD0092CC8B /* DRBookSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2861CCC51E2768DD0092CC8B /* DRBookSet.m */; };
+		2861CCC91E2768DD0092CC8B /* DRReadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2861CCC71E2768DD0092CC8B /* DRReadView.m */; };
+		2861CCCC1E2768FA0092CC8B /* DRReadBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2861CCCB1E2768FA0092CC8B /* DRReadBookViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,8 +66,6 @@
 		2027624D1C0856E4004E19CD /* BookModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookModel.m; sourceTree = "<group>"; };
 		2028305A1CF7EF9E00472132 /* DRSetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRSetViewController.h; sourceTree = "<group>"; };
 		2028305B1CF7EF9E00472132 /* DRSetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRSetViewController.m; sourceTree = "<group>"; };
-		202948261C168089003A02A4 /* DRReadBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRReadBookViewController.h; sourceTree = "<group>"; };
-		202948271C168089003A02A4 /* DRReadBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRReadBookViewController.m; sourceTree = "<group>"; };
 		2040FF401DC1920400F5284F /* DRBookSchemeUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRBookSchemeUrl.h; sourceTree = "<group>"; };
 		2040FF411DC1920400F5284F /* DRBookSchemeUrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRBookSchemeUrl.m; sourceTree = "<group>"; };
 		2040FF431DC1920400F5284F /* DRBookSchemeUrlModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRBookSchemeUrlModel.h; sourceTree = "<group>"; };
@@ -77,12 +77,17 @@
 		20988FF31CF81F3000E810B5 /* libDRBase.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libDRBase.a; path = "Build/Products/Debug-iphonesimulator/libDRBase.a"; sourceTree = "<group>"; };
 		20988FF41CF81F3000E810B5 /* libDRLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libDRLibrary.a; path = "Build/Products/Debug-iphonesimulator/libDRLibrary.a"; sourceTree = "<group>"; };
 		20988FF71CF81F5400E810B5 /* Pods.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods.framework; path = "Build/Products/Debug-iphonesimulator/Pods.framework"; sourceTree = "<group>"; };
-		20E2F1F81C18258400C763B2 /* DRBookSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRBookSet.h; sourceTree = "<group>"; };
-		20E2F1F91C18258400C763B2 /* DRBookSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRBookSet.m; sourceTree = "<group>"; };
 		20F148B71C0C00E700EBE4C5 /* DRAddLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRAddLocationViewController.h; sourceTree = "<group>"; };
 		20F148B81C0C00E700EBE4C5 /* DRAddLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRAddLocationViewController.m; sourceTree = "<group>"; };
 		20F148B91C0C00E700EBE4C5 /* DRHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRHomeViewController.h; sourceTree = "<group>"; };
 		20F148BA1C0C00E700EBE4C5 /* DRHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRHomeViewController.m; sourceTree = "<group>"; };
+		2851DE5E1E260F5500EE9203 /* 楷体_GB2312.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "楷体_GB2312.ttf"; sourceTree = "<group>"; };
+		2861CCC41E2768DD0092CC8B /* DRBookSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRBookSet.h; sourceTree = "<group>"; };
+		2861CCC51E2768DD0092CC8B /* DRBookSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRBookSet.m; sourceTree = "<group>"; };
+		2861CCC61E2768DD0092CC8B /* DRReadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRReadView.h; sourceTree = "<group>"; };
+		2861CCC71E2768DD0092CC8B /* DRReadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRReadView.m; sourceTree = "<group>"; };
+		2861CCCA1E2768FA0092CC8B /* DRReadBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRReadBookViewController.h; sourceTree = "<group>"; };
+		2861CCCB1E2768FA0092CC8B /* DRReadBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRReadBookViewController.m; sourceTree = "<group>"; };
 		84E78644EEDBF86FF4D538EF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -160,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				201219781BDDC00A0052ED19 /* Assets.xcassets */,
+				2851DE5D1E260F5500EE9203 /* Source */,
 				2012196D1BDDC00A0052ED19 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -232,7 +238,7 @@
 			children = (
 				201DA90C1C05B26200453605 /* FileDownload */,
 				201DA9201C05B2C700453605 /* ReadBookManager */,
-				202948251C168089003A02A4 /* DRReadController */,
+				2861CCC31E2768DD0092CC8B /* DRReadView */,
 			);
 			path = SynthesizeCommon;
 			sourceTree = "<group>";
@@ -298,17 +304,6 @@
 			path = DoReading/SynthesizeCommon/ReadBookManager;
 			sourceTree = SOURCE_ROOT;
 		};
-		202948251C168089003A02A4 /* DRReadController */ = {
-			isa = PBXGroup;
-			children = (
-				202948261C168089003A02A4 /* DRReadBookViewController.h */,
-				202948271C168089003A02A4 /* DRReadBookViewController.m */,
-				20E2F1F81C18258400C763B2 /* DRBookSet.h */,
-				20E2F1F91C18258400C763B2 /* DRBookSet.m */,
-			);
-			path = DRReadController;
-			sourceTree = "<group>";
-		};
 		2040FF3F1DC1920400F5284F /* dataService */ = {
 			isa = PBXGroup;
 			children = (
@@ -335,6 +330,8 @@
 				20F148BA1C0C00E700EBE4C5 /* DRHomeViewController.m */,
 				20F148B71C0C00E700EBE4C5 /* DRAddLocationViewController.h */,
 				20F148B81C0C00E700EBE4C5 /* DRAddLocationViewController.m */,
+				2861CCCA1E2768FA0092CC8B /* DRReadBookViewController.h */,
+				2861CCCB1E2768FA0092CC8B /* DRReadBookViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -348,6 +345,25 @@
 				20484F4B1C0D4A1F00B1022D /* DRCollectionLayout.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		2851DE5D1E260F5500EE9203 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2851DE5E1E260F5500EE9203 /* 楷体_GB2312.ttf */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		2861CCC31E2768DD0092CC8B /* DRReadView */ = {
+			isa = PBXGroup;
+			children = (
+				2861CCC41E2768DD0092CC8B /* DRBookSet.h */,
+				2861CCC51E2768DD0092CC8B /* DRBookSet.m */,
+				2861CCC61E2768DD0092CC8B /* DRReadView.h */,
+				2861CCC71E2768DD0092CC8B /* DRReadView.m */,
+			);
+			path = DRReadView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,7 +395,7 @@
 		201219611BDDC00A0052ED19 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = ForHappy;
 				TargetAttributes = {
 					201219681BDDC00A0052ED19 = {
@@ -412,6 +428,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				201219791BDDC00A0052ED19 /* Assets.xcassets in Resources */,
+				2851DE5F1E260F5500EE9203 /* 楷体_GB2312.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,14 +488,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				20F148BD1C0C00E700EBE4C5 /* DRHomeViewController.m in Sources */,
-				202948281C168089003A02A4 /* DRReadBookViewController.m in Sources */,
-				20E2F1FA1C18258400C763B2 /* DRBookSet.m in Sources */,
+				2861CCCC1E2768FA0092CC8B /* DRReadBookViewController.m in Sources */,
 				201DA91F1C05B26200453605 /* DownLogModel.m in Sources */,
+				2861CCC91E2768DD0092CC8B /* DRReadView.m in Sources */,
 				2040FF461DC1920400F5284F /* DRBookSchemeUrlModel.m in Sources */,
 				201DA91E1C05B26200453605 /* FileDownloadRequest.m in Sources */,
 				2027624E1C0856E4004E19CD /* BookModel.m in Sources */,
 				2040FF451DC1920400F5284F /* DRBookSchemeUrl.m in Sources */,
 				2028305C1CF7EF9E00472132 /* DRSetViewController.m in Sources */,
+				2861CCC81E2768DD0092CC8B /* DRBookSet.m in Sources */,
 				20484F4C1C0D4A1F00B1022D /* DRCollectionLayout.m in Sources */,
 				2012196E1BDDC00A0052ED19 /* main.m in Sources */,
 				201219A31BDDD06F0052ED19 /* AppDelegate.m in Sources */,
@@ -510,15 +528,17 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -533,7 +553,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "";
@@ -555,8 +575,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -573,7 +595,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				SDKROOT = iphoneos;
@@ -606,7 +628,7 @@
 					"\"${PODS_ROOT}/Headers/Private/Mantle\"",
 				);
 				INFOPLIST_FILE = DoReading/Application/Configuration/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -647,7 +669,7 @@
 					"\"${PODS_ROOT}/Headers/Private/Mantle\"",
 				);
 				INFOPLIST_FILE = DoReading/Application/Configuration/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
